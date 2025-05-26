@@ -1,18 +1,72 @@
 # DeepFocus
 
-A lightweight Pomodoro-style timer application built in C using the Windows API. DeepFocus helps users manage work and rest cycles by allowing custom focus and rest durations.
+DeepFocus is a desktop application built with Electron that helps you stay focused and productive by managing your work sessions and breaks.
 
----
+![May 26, 2025, 05_51_29 PM](https://github.com/user-attachments/assets/c28e2fff-7e26-4d65-b3fd-8892ee7df352)
 
 ## Features
 
-* **Customizable Timers:** Set your preferred durations for both focus and rest periods.
-* **Time String Parsing:** Input times in a flexible format (e.g., "1h 30m" or "3600s") or simply in seconds.
-* **Windows Notifications:** Get alerted when a focus or rest session is complete via a native Windows message box.
-* **Session Management:**
-    * Extend focus time by 15 minutes when prompted.
-    * Option to continue with another work/rest cycle or exit the application after a rest period.
-* **Minimalist Design:** A console-based application focused on core functionality.
+- Focus Timer with customizable work/break intervals
+- Desktop notifications for session management
+- Minimal and distraction-free interface
+- Cross-platform support (Windows, macOS, Linux)
 
----
+## Tech Stack
 
+- Electron (v28.3.3)
+- Node.js
+
+## System Requirements
+
+- Windows 10+ / macOS 10.13+ / Arch 18.04+ or compatible Linux distribution
+- Node.js (>=12.0.0)
+- 
+## Development Setup
+
+1. Prerequisites:
+   - Node.js (>=12.0.0)
+   - npm or yarn
+   - Git
+
+2. Installation:
+   ```bash
+   git clone https://github.com/destro1t/deepfocus.git
+   cd deepfocus
+   npm install
+   ```
+
+3. Available Scripts:
+   ```bash
+   npm start      # Run in development mode
+   npm run build  # Build the application
+   npm run test   # Run tests (if configured)
+   ```
+
+## Configuration
+
+The application can be configured through the following methods:
+- Settings menu in the application
+- Configuration file (location depends on OS)
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Troubleshooting
+
+Common issues and their solutions:
+1. Application won't start
+   - Check Node.js version
+   - Clear npm cache and reinstall dependencies
+
+2. Build errors
+   - Ensure all dependencies are installed
+   - Check system requirements
+
+## License
+
+This project is licensed under the MIT License.
