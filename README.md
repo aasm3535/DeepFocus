@@ -2,6 +2,9 @@
 
 # ВНИМАНИЕ ДАННЫЙ ПРОЕКТ БЫЛ СДЕЛАЛ ПОЛЬНОСТЬЮ AI Я НЕ НЕСУ ОТВЕСТВЕНОСТЬ ЗА ЕГО КОД ЕСЛИ ВАШ ПК УМРЁТ НЕ МОЯ ВИНА)
 
+![image](https://github.com/user-attachments/assets/07a29376-35ba-4989-ad6f-a8b8ea79d987)
+
+
 DeepFocus is a desktop application built with Electron that helps you stay focused and productive by managing your work sessions and breaks.
 
 ![May 26, 2025, 05_51_29 PM](https://github.com/user-attachments/assets/c28e2fff-7e26-4d65-b3fd-8892ee7df352)
