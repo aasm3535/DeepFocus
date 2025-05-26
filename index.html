@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeepFocus</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="intro-screen" class="screen">
+        <div class="logo">
+            <span class="deep">Deep</span><span class="focus">Focus</span>
+        </div>
+        <button id="next-button" class="orange-button">next</button>
+    </div>
+
+    <div id="timer-screen" class="screen">
+        <div class="timer-display" id="timer">25:00</div>
+        <button id="start-button">Start Work</button>
+        <button id="settings-button" class="orange-button">Settings</button>
+    </div>
+
+    <div id="settings-screen" class="screen">
+        <div class="settings-title">
+            <span class="setting-part">Sett</span>ing
+        </div>
+
+        <!-- Add audio elements for notifications -->
+        <audio id="timer-complete-sound" src="assets/notification.mp3" preload="auto"></audio>
+        <audio id="phase-change-sound" src="assets/phase-change.mp3" preload="auto"></audio>
+
+        <div class="settings-group">
+            <label for="work-time-options">Work Time:</label>
+            <div class="time-options-container" id="work-time-options">
+                <button data-time="15">15</button>
+                <button data-time="20">20</button>
+                <button data-time="50">50</button>
+                <button data-time="75">75</button>
+                <button data-time="95">95</button>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <label for="short-break-time-options">Short Break:</label>
+            <div class="time-options-container" id="short-break-time-options">
+                <button data-time="15">15</button>
+                <button data-time="20">20</button>
+                <button data-time="50">50</button>
+                <button data-time="75">75</button>
+                <button data-time="95">95</button>
+            </div>
+        </div>
+
+        <button id="save-button" class="orange-button">Save</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,15 @@
+{
+    "name": "deepfocus",
+    "version": "1.0.0",
+    "description": "Simple Calculator App",
+    "main": "main.js",
+    "author": "Jane Doe",
+    "license": "MIT",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "electron": "^28.3.3"
+    }
+}
