@@ -72,3 +72,5 @@ Common issues and their solutions:
 ## License
 
 This project is licensed under the MIT License.
+
+![image 5](https://github.com/user-attachments/assets/d934205c-d1cf-49a6-af64-37290ac37dc2)
