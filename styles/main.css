@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Jersey10';
+    src: url('../assets/Jersey10.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ASM';
+    src: url('../assets/ASM.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ASMS';
+    src: url('../assets/ASMS.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Jersey10', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-app-region: drag;
+    user-select: none;
+}
+
+button, input, .no-drag {
+    -webkit-app-region: no-drag;
+    user-select: none;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#intro-screen {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    justify-content: center;
+    position: relative;
+}
+
+#intro-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+#timer-screen {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+#timer-screen.visible {
+    display: flex;
+    opacity: 1;
+}
+
+#settings-screen {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px 40px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#settings-screen.visible {
+    display: flex;
+    opacity: 1;
+}
+
+.logo {
+    font-size: 80px;
+    -webkit-app-region: no-drag;
+}
+
+.logo .deep {
+    color: #ff5039;
+}
+
+.logo .focus {
+    color: #ffffff;
+}
+
+.settings-title {
+    font-size: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.settings-title .setting-part {
+    color: #ff5039;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #424242;
+    color: #ffffff;
+    font-family: 'Jersey10', sans-serif;
+    transition: background-color 0.3s ease;
+    -webkit-app-region: no-drag;
+}
+
+.orange-button {
+    background-color: #ff5039;
+}
+
+.orange-button:hover {
+    background-color: #e0452c;
+}
+
+#next-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#settings-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+#save-button {
+    margin-top: 40px;
+    padding: 12px 30px;
+    font-size: 22px;
+}
+
+.timer-display {
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: 'Jersey10', sans-serif;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.timer-display.timer-active {
+    font-size: 100px;
+}
+
+.settings-group {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.time-options-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff5039;
+    border-radius: 15px;
+    padding: 5px;
+    gap: 10px;
+    justify-content: center;
+    width: auto;
+}
+
+.time-options-container button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 9px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+}
+
+.time-options-container button:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.time-options-container button.selected {
+    background-color: #ff5039;
+    color: #ffffff;
+}
+
+.time-options-container button.selected:hover {
+    background-color: #e0452c;
+} 
